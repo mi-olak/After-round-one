@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  color: white;
+  border: 5px solid red;
+  margin: 5%;
+  padding: 5%;
+  background-image: url(images/darkwallpaper.jpg);
+}
+
+.sub-main h1 {
+  border: 1px solid magenta;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.start,
+.end {
+  border: 0px solid purple;
+  margin: 0% 29%;
+}
+
+.start {
+  text-align: center;
+  padding: 2%;
+  background-color: white;
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+.end {
+  cursor: pointer;
+  text-align: center;
+  padding: 2%;
+  background-color: red;
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.end a {
+  color: white;
+  text-decoration: none;
+}
+.start a {
+  text-decoration: none;
+}
+.options {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 0%;
+}
+.computer,
+.multiplayer {
+  cursor: pointer;
+  padding: 3%;
+  margin: 2%;
+  background-color: white;
+  border: 1px solid blue;
+  text-align: center;
+  font-weight: 900;
+  font-size: large;
+}
+.computer a,
+.multiplayer a {
+  text-decoration: none;
+}
+.practice {
+  margin: 3%;
+  text-align: center;
+}
+.hands img {
+  width: 100%;
+}
+.results {
+  margin-bottom: 3%;
+}
+.pvalue,
+.p2value,
+.cvalue,
+.solution,
+.final {
+  border: 1px solid white;
+  margin: 0.5% 0%;
+  background-color: purple;
+  padding: 2%;
+  text-align: center;
+}
+.final {
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  margin: 0.5% 17%;
+}
+#pvalue,
+#p2value,
+#cvalue,
+#solution {
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 1.5%;
+}
+/*
+.help {
+    text-align: center;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+.help a {
+    font-size: 1.2rem;
+    background-color: white;
+    text-decoration: none;
+}
+*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav h2 {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+.sidenav p {
+  color: #818181;
+  text-align: center;
+  border: 1px solid white;
+  margin: 1% 5%;
+}
+.sidenav h2:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  text-align: center;
+}
+#main span {
+  background-color: white;
+  font-style: italic;
+  font-size: xx-small;
+  font-size: 0.7rem;
+  color: purple;
+}
+
+@media (min-width: 700px) {
+  .main {
+    margin: 0% 25%;
+  }
+}

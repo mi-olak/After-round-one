@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>Rock, paper and scissors</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub-main">
+            <h1>After Round One</h1>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <h2>Help</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi mollitia autem expedita voluptate
+                    fugiat dicta nemo maxime cum sint. A veritatis blanditiis temporibus labore exercitationem
+                    reiciendis suscipit totam natus quo!</p>
+
+                    <h2>instructions</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi mollitia autem expedita voluptate
+                        fugiat dicta nemo maxime cum sint. A veritatis blanditiis temporibus labore exercitationem
+                        reiciendis suscipit totam natus quo!</p>
+            </div>
+
+            <div id="main">
+                <h2>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">How to play</span>
+                </h2>
+            </div>
+
+
+            <div class="hands">
+                <img src="images/hands.jpg" alt="image of hands during the game">
+            </div>
+
+            <div class="buttons">
+
+                <div class="start" onclick="myStart()" id="start"><a href="#">Start</a></div>
+
+                <div class="options" id="options">
+
+
+                    <div class="computer" id="computer" style="display:none; width: 50%;" onclick="vsCom()"><a
+                            href="#">Vs Computer</a></div>
+
+                    <div class="multiplayer" id="multiplayer" style="display:none; width: 50%;" onclick="mplay()"><a
+                            href="#">Multiplayer</a></div>
+
+                    <div class="details" id="details"></div>
+
+                </div>
+                <div class="results" id="results" style="display: none;">
+                    <p class="pvalue">Player One chose:
+                    <div id="pvalue"></div>
+                    </p>
+
+
+                    <br>
+                    <p id="playertwo" class="p2value">Player Two chose:
+                    <div id="p2value"></div>
+                    </p>
+                    <br>
+
+                    <p class="cvalue">Computer chose:
+                    <div id="cvalue"></div>
+                    </p>
+                    <br>
+
+
+                    <p class="solution">After round one:
+                    <div id="solution"></div>
+                    </p>
+                    <br>
+                    <div id="final" class="final"></div>
+                    <br>
+                </div>
+                <div class="end" onclick="myEnd()" id="end" style="display:none;"><a href="#">End</a></div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--
+    
+    <div class="practice">
+        <a href="#" onclick="myPractice()">practice</a>
+        <br>
+        <br>
+        <p id="practice"></p>
+        <br>
+        <br>
+        <p id="practice2"></p>
+    </div>
+-->
+
+
+</body>
+
+
+</html>
