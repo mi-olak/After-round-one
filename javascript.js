@@ -33,20 +33,20 @@ function vsCom() {
             document.getElementById('cvalue').innerHTML = computerChoice;
             document.getElementById('results').style.display = 'block';
 
-            setTimeout(myResult, 3000);
+            setTimeout(myResult, 2000);
 
             function myResult() {
 
                 sumtotal = Math.floor(Math.random() * 10 + 1);
-                alert(sumtotal);
+                alert( 'round one: ' + sumtotal);
                 document.getElementById('solution').innerHTML = sumtotal;
 
                 if (sumtotal === playerChoice) {
-                    verdit = "you win";
+                    alert(verdit = "you win");
                 } else if (sumtotal === computerChoice) {
-                    verdit = "computer wins";
+                    alert(verdit = "computer wins");
                 } else {
-                    verdit = "Nobody won";
+                    alert(verdit = "Nobody won!");
                 };
 
                 document.getElementById('results').style.display = 'block';
@@ -134,7 +134,7 @@ function mplay() {
                 };
                 document.getElementById('cvalue').innerHTML = computerChoice;
 
-                setTimeout(myResults, 3000)
+                setTimeout(myResults, 2000)
 
                 function myResults() {
                     let sumtotal = Math.floor(Math.random() * 10 + 1);
